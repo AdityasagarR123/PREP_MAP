@@ -81,18 +81,14 @@ Other scripts: `npm run build` (production build), `npm start` (serve the build)
 3. **Root Directory:** click *Edit* and choose `frontend`. Vercel detects Next.js automatically
    (build `next build`, output `.next` — leave the defaults).
 4. **Environment Variables:** add
-   `NEXT_PUBLIC_API_URL` = your Render backend URL, e.g. `https://prepmap-api.onrender.com` (no trailing slash).
-5. Click **Deploy**. You'll get a domain like `https://prepmap.vercel.app`.
-6. **Allow the Vercel domain on the backend (CORS).** In Render → your `prepmap-api` service → *Environment*, set
-   `ALLOWED_ORIGINS` to your Vercel URL(s), comma-separated, e.g.
-
-   ```
-   https://prepmap.vercel.app,http://localhost:3000
-   ```
-
-   Save — Render redeploys the backend. (`*` also works but allows any site to call the API.)
-7. Open the Vercel URL. The first visit after the backend has been idle shows
+   `NEXT_PUBLIC_API_URL` = your Render backend URL, e.g. `https://prep-map.onrender.com` (no trailing slash).
+5. Click **Deploy**. Live site: **https://prepmap-three.vercel.app**
+6. Open the Vercel URL. The first visit after the backend has been idle shows
    "Waking up the server…" for up to a minute while Render's free instance starts.
+
+**No CORS setup needed.** The browser never calls Render directly: it calls `/backend/*` on the Vercel site,
+and `next.config.ts` proxies those requests to `NEXT_PUBLIC_API_URL`. The backend's `ALLOWED_ORIGINS`
+can be left as it is.
 
 If you change `NEXT_PUBLIC_API_URL` later, redeploy on Vercel (Deployments → ⋯ → Redeploy) so the new value is built in.
 
@@ -106,6 +102,9 @@ If you change `NEXT_PUBLIC_API_URL` later, redeploy on Vercel (Deployments → �
   next to it is the accessible path.
 
 ## Notes
+
+- **API proxy:** `lib/api.ts` sends every request to `/backend/...`; `next.config.ts` rewrites that to the
+  real backend. This works the same locally (`npm run dev`) and on Vercel.
 
 - **Cold starts:** `lib/api.ts` calls `/health` first and retries with backoff (about a minute in total) before
   showing an error with a Retry button. `/companies`, `/subjects` and company details are cached for the

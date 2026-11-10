@@ -7,7 +7,14 @@
  * anything else is sent.
  */
 
-export const API_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/+$/, "");
+/** The real backend (set via NEXT_PUBLIC_API_URL). Used by the proxy in next.config.ts. */
+export const BACKEND_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/+$/, "");
+
+/**
+ * What the browser calls: a same-origin path that next.config.ts rewrites to
+ * BACKEND_URL. Same-origin means no CORS setup is needed on the backend.
+ */
+export const API_URL = "/backend";
 
 export const DISCLAIMER =
   "Recommended based on each company's public hiring process, not a record of questions the company asked.";
