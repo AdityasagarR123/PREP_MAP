@@ -32,3 +32,13 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
+
+
+# Frontend (Next.js)
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/*.tsbuildinfo
+frontend/.vercel
+.env.local
+!frontend/.env.example
