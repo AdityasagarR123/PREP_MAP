@@ -9,8 +9,8 @@ Pick a company (TCS, Infosys, ZS Associates, Google, Amazon and 14 more), get pr
 [![Live site](https://img.shields.io/badge/Live-prepmap--three.vercel.app-372AAC?style=for-the-badge&logo=vercel&logoColor=white)](https://prepmap-three.vercel.app)
 [![API](https://img.shields.io/badge/API-prep--map.onrender.com-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://prep-map.onrender.com/docs)
 
-[![Dataset](https://img.shields.io/badge/🤗%20Dataset-asked__before__cs__interview__questions-FFD21E)](https://huggingface.co/datasets/adithegod/asked_before_cs_interview_questions)
-[![Model](https://img.shields.io/badge/🤗%20Model-prepmap__question__classifier-FFD21E)](https://huggingface.co/adithegod/prepmap_question_classifier)
+[![Dataset](https://img.shields.io/badge/Dataset-asked__before__cs__interview__questions-FFD21E)](https://huggingface.co/datasets/adithegod/asked_before_cs_interview_questions)
+[![Model](https://img.shields.io/badge/Model-prepmap__question__classifier-FFD21E)](https://huggingface.co/adithegod/prepmap_question_classifier)
 ![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
@@ -51,13 +51,13 @@ Pick a company (TCS, Infosys, ZS Associates, Google, Amazon and 14 more), get pr
 
 | What | Link |
 | --- | --- |
-| 🌐 **Website** (Vercel) | https://prepmap-three.vercel.app |
-| ⚙️ **Backend API** (Render) | https://prep-map.onrender.com |
-| 📖 **Interactive API docs** (Swagger) | https://prep-map.onrender.com/docs |
-| ❤️ **Health check** | https://prep-map.onrender.com/health |
-| 🤗 **Dataset** (made by me) | https://huggingface.co/datasets/adithegod/asked_before_cs_interview_questions |
-| 🤗 **Model** (trained by me) | https://huggingface.co/adithegod/prepmap_question_classifier |
-| 💻 **Source code** | https://github.com/AdityasagarR123/PREP_MAP |
+| **Website** (Vercel) | https://prepmap-three.vercel.app |
+| **Backend API** (Render) | https://prep-map.onrender.com |
+| **Interactive API docs** (Swagger) | https://prep-map.onrender.com/docs |
+| **Health check** | https://prep-map.onrender.com/health |
+| **Dataset** (made by me) | https://huggingface.co/datasets/adithegod/asked_before_cs_interview_questions |
+| **Model** (trained by me) | https://huggingface.co/adithegod/prepmap_question_classifier |
+| **Source code** | https://github.com/AdityasagarR123/PREP_MAP |
 
 > The API runs on Render's free tier, which sleeps when idle. The **first request after a quiet period can take up to
 > a minute** — the website shows a "Waking up the server…" message and retries automatically.
@@ -68,13 +68,13 @@ Pick a company (TCS, Infosys, ZS Associates, Google, Amazon and 14 more), get pr
 
 | Feature | Description |
 | --- | --- |
-| 🎯 **Company-matched practice** | Choose one of 19 companies and get a practice set ordered core → frequent → occasional for that company's process. |
-| 🧩 **Filters & shareable sets** | Filter by subject, relevance and difficulty, choose 5–100 questions. Filters and a random seed live in the URL, so the same link always gives the same set. |
-| 🃏 **Practice mode** | One question at a time with Previous / Next, keyboard shortcuts and an end-of-set summary of subjects covered. |
-| 🤖 **Question analyser** | Paste any question (3–500 characters). The model predicts its subject (with top-3 probabilities) and difficulty, then lists the companies it's recommended for. |
-| 🏢 **Company profiles** | Fresher roles, hiring rounds, subject tiers, difficulty focus, data confidence and a link to the public source. |
-| 📈 **My progress** | Mark questions *Practised* or *Revise later*, set a target company, and see coverage by subject and difficulty. Stored only in your browser — no login. |
-| 🌍 **3D company map** | An interactive, drag-to-spin globe of all 19 companies plus floating 3D UI cards (pure canvas + CSS, no 3D library). |
+| **Company-matched practice** | Choose one of 19 companies and get a practice set ordered core → frequent → occasional for that company's process. |
+| **Filters & shareable sets** | Filter by subject, relevance and difficulty, choose 5–100 questions. Filters and a random seed live in the URL, so the same link always gives the same set. |
+| **Practice mode** | One question at a time with Previous / Next, keyboard shortcuts and an end-of-set summary of subjects covered. |
+| **Question analyser** | Paste any question (3–500 characters). The model predicts its subject (with top-3 probabilities) and difficulty, then lists the companies it's recommended for. |
+| **Company profiles** | Fresher roles, hiring rounds, subject tiers, difficulty focus, data confidence and a link to the public source. |
+| **My progress** | Mark questions *Practised* or *Revise later*, set a target company, and see coverage by subject and difficulty. Stored only in your browser — no login. |
+| **3D company map** | An interactive, drag-to-spin globe of all 19 companies plus floating 3D UI cards (pure canvas + CSS, no 3D library). |
 
 > There are **no model answers** in the dataset, so PrepMap never shows or invents answers.
 
@@ -102,7 +102,7 @@ becomes the question's relevance for that company.
 
 ## The dataset (made by me)
 
-**🤗 [adithegod/asked_before_cs_interview_questions](https://huggingface.co/datasets/adithegod/asked_before_cs_interview_questions)** · License: CC BY 4.0
+**[adithegod/asked_before_cs_interview_questions](https://huggingface.co/datasets/adithegod/asked_before_cs_interview_questions)** · License: CC BY 4.0
 
 - **1,770 original questions**, written for this project — not copied from any website or question bank.
 - **15 subjects**, each question labelled with a subject and a difficulty (easy / medium / hard).
@@ -160,15 +160,15 @@ Frequent and occasional subjects, hiring rounds and sources for each company are
 
 ## The ML models
 
-**🤗 [adithegod/prepmap_question_classifier](https://huggingface.co/adithegod/prepmap_question_classifier)** · License: CC BY 4.0
+**[adithegod/prepmap_question_classifier](https://huggingface.co/adithegod/prepmap_question_classifier)** · License: CC BY 4.0
 
 Two scikit-learn pipelines, trained on the 1,770 questions. Three model families were compared for each task using
 **macro F1 from stratified 5-fold cross-validation**:
 
 | Model | Subject (15 classes) | Difficulty (3 classes) |
 | --- | ---: | ---: |
-| Random Forest (baseline) | 0.628 | **0.564** ✅ |
-| Logistic Regression | **0.762** ✅ | 0.520 |
+| Random Forest (baseline) | 0.628 | **0.564** (used) |
+| Logistic Regression | **0.762** (used) | 0.520 |
 | XGBoost | 0.603 | 0.510 |
 
 - **Subject classifier (used):** TF-IDF on word 1–2-grams + character 3–5-grams → Logistic Regression.
@@ -421,4 +421,4 @@ backend's `ALLOWED_ORIGINS`.
 - **Code**: this repository.
 - Built by **[AdityasagarR123](https://github.com/AdityasagarR123)**.
 
-If PrepMap helped your prep, a ⭐ on the repo is appreciated!
+If PrepMap helped your prep, a star on the repo is appreciated!
