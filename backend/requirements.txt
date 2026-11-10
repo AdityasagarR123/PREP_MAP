@@ -1,0 +1,11 @@
+scikit-learn==1.6.1
+numpy>=2.0,<3
+scipy
+pandas
+joblib
+huggingface_hub
+fastapi
+uvicorn[standard]
+pydantic>=2
+httpx
+pytest
