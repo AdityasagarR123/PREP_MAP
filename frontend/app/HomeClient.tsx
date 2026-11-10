@@ -205,7 +205,7 @@ export default function HomeClient() {
               {[
                 ["Quantitative Aptitude", "core", 100],
                 ["Logical Reasoning", "core", 100],
-                ["Verbal Ability", "core", 100],
+                ["Programming Fundamentals", "core", 100],
                 ["DSA", "frequent", 66],
                 ["DBMS & SQL", "frequent", 66],
                 ["Operating Systems", "occasional", 33],
